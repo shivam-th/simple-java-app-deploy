@@ -9,7 +9,7 @@ on:
 # Define environment variables     
 env:
     AWS_REGION: us-east-1
-    ECR_REGISTRY: 471112745159.dkr.ecr.us-east-1.amazonaws.com/my-java-app
+    ECR_REGISTRY: 471112745159.dkr.ecr.us-east-1.amazonaws.com
     ECR_REPOSITORY: my-java-app
     CLUSTER_NAME: my-eks-cluster
 
