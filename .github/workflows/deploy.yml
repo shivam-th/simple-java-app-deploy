@@ -54,3 +54,11 @@ jobs:
       run: |
         kubectl apply -f k8s/deployment.yaml
         kubectl apply -f k8s/service.yaml
+        
+    # Fetch External LoadBalancer IP
+    - name: Get LoadBalancer IP
+      run: |
+        echo "Waiting for External LoadBalancer External IP..."
+        sleep 60
+        kubectl get svc java-app-service
+
