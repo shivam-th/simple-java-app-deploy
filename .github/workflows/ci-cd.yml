@@ -61,4 +61,5 @@ jobs:
         echo "Waiting for External LoadBalancer External IP..."
         sleep 60
         kubectl get svc java-app-service
+        kubectl get pods 
 
