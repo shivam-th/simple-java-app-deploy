@@ -1,5 +1,7 @@
-public class HelloWorld {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+@RestController
+public class HelloController {
+    @GetMapping("/")
+    public String hello() {
+        return "Hello, World!";
+    }
 }
